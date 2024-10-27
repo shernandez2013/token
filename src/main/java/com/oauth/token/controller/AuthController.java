@@ -23,6 +23,6 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody AuthRequest authRequest) {
         String token = authService.login(authRequest);
-        return ResponseEntity.ok(token); // Retorna el token en caso de éxito
+        return ResponseEntity.ok(token);
     }
 }
